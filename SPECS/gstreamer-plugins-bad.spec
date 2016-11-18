@@ -15,7 +15,7 @@
 Summary: GStreamer streaming media framework "bad" plug-ins
 Name: gstreamer-plugins-bad
 Version: 0.10.23
-Release: 5%{?dist}
+Release: 6%{?dist}
 License: LGPLv2+
 Group: Applications/Multimedia
 URL: http://gstreamer.freedesktop.org/
@@ -57,8 +57,8 @@ well enough, or the code is not of good enough quality.
 # Note we don't bother with disabling everything which is in Fedora, that
 # is unmaintainable, instead we selectively run make in subdirs
 %configure \
-    --with-package-name="gst-plugins-bad rpmfusion rpm" \
-    --with-package-origin="http://rpmfusion.org/" \
+    --with-package-name="DeskOS GStreamer-plugins-bad package" \
+    --with-package-origin="https://deskosproject.org/" \
     --enable-debug --disable-static --enable-experimental
 # Don't use rpath!
 sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
@@ -107,6 +107,9 @@ rm %{buildroot}%{_libdir}/gstreamer-%{majorminor}/*.la
 
 
 %changelog
+* Thu Nov 17 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.10.23-6
+- Rebuilt for DeskOS
+
 * Tue Jan 07 2014 Nicolas Chauvet <kwizart@gmail.com> - 0.10.23-5
 - Rebuilt for librtmp
 

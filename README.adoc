@@ -1,0 +1,6 @@
+= DeskOS: gstreamer-plugins-bad RPM
+
+This is the _gstreamer-plugins-bad_ RPM package for the *DeskOS* operating system.
+
+Upstream comes from the NUX Dextop 7:
+http://li.nux.ro/download/nux/dextop/el7/SRPMS/gstreamer-plugins-bad-0.10.23-5.el7.nux.src.rpm[gstreamer-plugins-bad-0.10.23-5.el7.nux.src.rpm]
